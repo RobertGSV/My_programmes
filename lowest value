@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <string.h>
 
-// code to find the highest and lowest values in an array of integers
+// find the lowest value and the highest value in an array
+// must find the highest value first to make the lowest code work
 
 int numbers[5];
 
@@ -9,20 +11,18 @@ int highest = 0;
 int main(void)
 {
     printf("Enter 5 integers, pressing enter after each one entered\n");
-    
+
     int i=0;
     for(i=0; i < 5; i++)
     {
     scanf("%d", &numbers[i]);
-
-    // find the highest value first in order to make the lowest section below work
 
     if (numbers[i] > highest)
     {
           highest = numbers[i];
     }
     }
-    printf("The highest number is %d\n\n", highest);
+    printf("The highest number is \t%i\n", highest);
     int lowest = highest;
     int j=0;
     for(j=0; j < 5; j++)
@@ -32,5 +32,5 @@ int main(void)
           lowest = numbers[j];
     }
     }
-    printf("The lowest number is %d\n\n", lowest);
+    printf("The lowest number is \t%i\n", lowest);
 }
