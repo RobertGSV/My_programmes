@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-
 int numbers[5];
 int highest = 0;
 
 int main(void)
 {
+printf("Enter 5 integers\n");
     int i=0;
     for(i=0; i < 4; i++)
     {
