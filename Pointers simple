@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(void)
+{
+
+
+int k = 50;
+
+// declare the pointer
+int *p = &k;
+
+//point to the address
+p = &k;
+
+// the %p place holder is the format to dispay an address
+
+printf("\naddress 1: %p\n\n", &k);
+
+// this line below does the same thing as p and &k both point to the address of k
+
+printf("\naddress 2: %p\n\n", p);
+
+//dereference and get the value at the address
+// print an integer as it p has been deferenced with the star
+printf("The value is: %i\n\n", *p);
+
+}
