@@ -17,13 +17,16 @@ int main(void)
     }
     printf("You entered: \n");
 
+
+
     for (int j=0; j < 5; j++)
     {
     printf("%i, ", numbers[j]);
     }
     printf("\n");
 
-
+    lowest = numbers[0];
+    
     for (int k=0; k < 5; k++)
     {
     if ((numbers[k] < lowest))
